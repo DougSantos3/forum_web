@@ -1,0 +1,7 @@
+{
+    "questions": [
+      { "id": 1, "title": "How to use React?", "body": "Explain React basics", "tags": ["react", "javascript"] },
+      { "id": 2, "title": "What is Redux?", "body": "Explain Redux", "tags": ["redux", "state-management"] }
+    ]
+  }
+  
