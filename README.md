@@ -92,3 +92,7 @@ src/
 │
 └── App.js            // Arquivo principal
 
+### Inicie o servidor:
+`json-server --watch db.json --port 3001`
+
+### Aponte as chamadas da API para http://localhost:3001.
