@@ -1,16 +1,15 @@
-// Página de Criar Pergunta: Um formulário para enviar uma nova pergunta.
+import React, { useState, FormEvent } from "react"
 
-import React, { useState } from "react";
+const AskQuestion: React.FC = () => {
+  const [title, setTitle] = useState<string>("")
+  const [body, setBody] = useState<string>("")
 
-function AskQuestion() {
-  const [title, setTitle] = useState("");
-  const [body, setBody] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({ title, body });
+  // Tipando o evento do submit
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    console.log({ title, body })
     // Lógica para enviar a pergunta para a API
-  };
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -30,7 +29,7 @@ function AskQuestion() {
       ></textarea>
       <button type="submit">Submit</button>
     </form>
-  );
+  )
 }
 
-export default AskQuestion;
+export default AskQuestion
