@@ -3,10 +3,10 @@ Adicione as rotas no arquivo App.js para gerenciar as páginas: */
 
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Home from "./pages/Home"
-import QuestionDetail from "./pages/QuestionDetail"
-import AskQuestion from "./pages/AskQuestion"
-import Header from "./components/Header"
+import Home from "./pages/Home.tsx"
+import QuestionDetail from "./pages/QuestionDetail.tsx"
+import AskQuestion from "./pages/AskQuestion.tsx"
+import Header from "./components/Header.tsx"
 
 function App() {
   return (
